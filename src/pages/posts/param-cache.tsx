@@ -15,6 +15,7 @@ const Parampage = ({ post }: Props) => {
     const intervalId = setInterval(() => {
       setSeconds((x) => {
         if (x > 60) clearInterval(intervalId);
+        console.log("hi");
         return x + 1;
       });
     }, 1000);
