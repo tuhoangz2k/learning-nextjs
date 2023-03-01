@@ -13,7 +13,6 @@ const Parampage = ({ post }: Props) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setSeconds((x) => {
-        console.log("hi");
         if (x > 60) clearInterval(intervalId);
         return x + 1;
       });

@@ -18,7 +18,7 @@ const Parampage = ({ post }: Props) => {
         return x + 1;
       });
     }, 1000);
-    return clearInterval(intervalId);
+    return () => clearInterval(intervalId);
   }, []);
   return (
     <>
