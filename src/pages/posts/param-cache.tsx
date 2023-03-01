@@ -10,12 +10,11 @@ type Props = {
 const Parampage = ({ post }: Props) => {
   const router = useRouter();
   const [seconds, setSeconds] = useState(0);
-  console.log(router);
   useEffect(() => {
     const intervalId = setInterval(() => {
       setSeconds((x) => {
-        if (x > 60) clearInterval(intervalId);
         console.log("hi");
+        if (x > 60) clearInterval(intervalId);
         return x + 1;
       });
     }, 1000);
